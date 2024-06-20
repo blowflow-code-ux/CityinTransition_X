@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+ 
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    padding: 1em 13vw 5em calc(26vw + 1em);
+}
+
+body{
+    /* cursor : url(img/1x/), auto; */
+    min-height: 100%;
+}
+
+div { 
+    position: relative;
+}
+h1, p {
+    color:black;
+}
+::selection {
+    background-color: red;
+    color:white;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin-block: 0.25em 0.5em;
+    display: block;
+}
+
+nav {
+    position: fixed;
+    top: 1em; left: calc(26vw + 1em);
+    width: min(1080px, 100vw - 26vw - 3em);
+
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+
+    justify-content: space-between;
+    display: flex;
+
+    pointer-events: none;
+    z-index: +1;
+}
+nav .home{
+    text-decoration: underline 2px red;
+    pointer-events: all;
+}
+nav a:visited{
+    color:red;
+}
+
+.http {
+    position: fixed;
+    top:0px; left:0px;
+
+    font-family: "enra-sans-variable",sans-serif;
+    font-variation-settings: 'wght' 100;
+    font-size: 8vw;
+}
+
+.container {
+    width: min(1080px, 100vw - 26vw - 3em);
+    margin-top: calc(15vh + 2em);
+
+    font-family: "enra-sans-variable",sans-serif;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: aut repeat(12, 1fr);
+
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    
+    display: grid;
+}   
+.container h1 { 
+    font-family: "balboa", sans-serif;
+    font-weight: 700;
+    font-size: 5.2em;
+    letter-spacing: .03em;
+    line-height: 1.25em;
+    text-wrap: balance;
+    
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+    .container .texts { 
+        text-indent: 2em;
+        margin:0px;
+        font-size: 1.5em;
+        font-variation-settings: "wght" 400;
+        line-height: 1.4em;
+        grid-column:1/4;
+    }
+
+    .container .sidenotes { 
+        margin:0px;
+        font-size: 0.9em;
+        font-variation-settings: "wght" 400;
+        font-style: italic;
+        line-height: 1.2em;
+        grid-column:4/5;
+ 
+    }
+h1{font-size: 38px;
+    font-variation-settings: 'wght' 600;
+line-height: 38px;}
+
+h2{font-size: 32px;
+    font-variation-settings: 'wght' 400;}
+    
+p{font-size: 24px;
+    font-variation-settings: 'wght' 100;}
+p a{color:red; position: relative}
+
+p a:hover::after{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+p a.hover_1:hover::after{
+    content: url(img/office.jpg);
+}
+
+p a.hover_2:hover::after{
+    content: url(img/consumerism-hover.jpg.png);
+}
+
+p a.hover_3:hover::after{
+    content: url(img/weather-hover.jpg);
+}
+
+p a.hover_4:hover::after{
+    content: url(img/cement/concrete_base-min.jpg);
+}
+
+p a.hover_5:hover::after{
+    content: url(img/modularsystem.jpg);
+}
+
+p a.hover_6:hover::after{
+    content: url(img/ad/402-e-300x179-min.jpg);
+}
+
+p a.hover_7:hover::after{
+    content: url(img/pigeon.gif);
+}
+p a.hover_8:hover::after{
+        content: url(img/Flora/street\ plants-min.jpg);}
+p a.hover_9:hover::after{
+    content: url(img/Fauna/pigeon-min.jpg);
+}
+    p a.hover_10:hover::after{
+        content: url(img/energyconsumption-hover.jpg);
+    }
+    p a.hover_11:hover::after{
+        content: url(img/pipe.png);
+    }
+
+
+.subheading{
+    font-weight: bold;
+    font-style:italic;
+}
+.justified{
+    text-align: justify;
+    word-spacing: normal;
+}
+
+.sidenotes img{
+    width:100%;
+    max-height:100%;
+}
+
+.references p {
+    font-size: 15px;
+    color:rgb(165, 165, 165);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
