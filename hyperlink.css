@@ -13,7 +13,7 @@ html {
 }
 
 body{
-    /* cursor : url(img/1x/), auto; */
+    /* cursor : url(1x/), auto; */
     min-height: 100%;
 }
 
@@ -128,42 +128,42 @@ p a:hover::after{
 }
 
 p a.hover_1:hover::after{
-    content: url(img/office.jpg);
+    content: url(office.jpg);
 }
 
 p a.hover_2:hover::after{
-    content: url(img/consumerism-hover.jpg.png);
+    content: url(consumerism-hover.jpg.png);
 }
 
 p a.hover_3:hover::after{
-    content: url(img/weather-hover.jpg);
+    content: url(weather-hover.jpg);
 }
 
 p a.hover_4:hover::after{
-    content: url(img/cement/concrete_base-min.jpg);
+    content: url(cement/concrete_base-min.jpg);
 }
 
 p a.hover_5:hover::after{
-    content: url(img/modularsystem.jpg);
+    content: url(modularsystem.jpg);
 }
 
 p a.hover_6:hover::after{
-    content: url(img/ad/402-e-300x179-min.jpg);
+    content: url(ad/402-e-300x179-min.jpg);
 }
 
 p a.hover_7:hover::after{
-    content: url(img/pigeon.gif);
+    content: url(pigeon.gif);
 }
 p a.hover_8:hover::after{
-        content: url(img/Flora/street\ plants-min.jpg);}
+        content: url(Flora/street\ plants-min.jpg);}
 p a.hover_9:hover::after{
-    content: url(img/Fauna/pigeon-min.jpg);
+    content: url(Fauna/pigeon-min.jpg);
 }
     p a.hover_10:hover::after{
-        content: url(img/energyconsumption-hover.jpg);
+        content: url(energyconsumption-hover.jpg);
     }
     p a.hover_11:hover::after{
-        content: url(img/pipe.png);
+        content: url(pipe.png);
     }
 
 
